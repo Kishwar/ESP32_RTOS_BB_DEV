@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/kishwarkumar/Desktop/ESP32_RTOS_BB_DEV/build/CMakeFiles/bootloader"
+		},
+		{
+			"file" : "/Users/kishwarkumar/Desktop/ESP32_RTOS_BB_DEV/build/CMakeFiles/bootloader.rule"
+		},
+		{
+			"file" : "/Users/kishwarkumar/Desktop/ESP32_RTOS_BB_DEV/build/CMakeFiles/bootloader-complete.rule"
+		},
+		{
+			"file" : "/Users/kishwarkumar/Desktop/ESP32_RTOS_BB_DEV/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+		},
+		{
+			"file" : "/Users/kishwarkumar/Desktop/ESP32_RTOS_BB_DEV/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+		},
+		{
+			"file" : "/Users/kishwarkumar/Desktop/ESP32_RTOS_BB_DEV/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+		},
+		{
+			"file" : "/Users/kishwarkumar/Desktop/ESP32_RTOS_BB_DEV/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+		},
+		{
+			"file" : "/Users/kishwarkumar/Desktop/ESP32_RTOS_BB_DEV/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+		},
+		{
+			"file" : "/Users/kishwarkumar/Desktop/ESP32_RTOS_BB_DEV/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+		},
+		{
+			"file" : "/Users/kishwarkumar/Desktop/ESP32_RTOS_BB_DEV/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bootloader"
+		],
+		"name" : "bootloader"
+	}
+}

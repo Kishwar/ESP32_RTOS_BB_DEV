@@ -10,7 +10,7 @@
  *
  */
 
-#include "core.hpp"
+#include "_core.hpp"
 #include "interface.hpp"
 #include "inf_message.h"
 #include "wifi.h"
@@ -79,6 +79,7 @@ void core_powerup(void)
 
 //-------------------------------------------------------------------------//
 //-------------------------------------------------------------------------//
+//-------------------------------------------------------------------------//
 int8_t _kernel_request_handle_wifi_connect(inf &v)
 {
   wifi_con_req *req = (wifi_con_req *)inf_getbuffer(v);
@@ -89,7 +90,6 @@ int8_t _kernel_request_handle_wifi_connect(inf &v)
   return 0;
 }
 
-//-------------------------------------------------------------------------//
 //-------------------------------------------------------------------------//
 int8_t _kernel_request_handle_wifi_disconnect(inf &v)
 {

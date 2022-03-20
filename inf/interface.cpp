@@ -17,8 +17,9 @@
 #include <freertos/task.h>
 #include <freertos/queue.h>
 #include <map>
+#include <new>
 
-#include "core.hpp"
+#include "_core.hpp"
 
 static std::map<uint32_t, QueueHandle_t> infQ;
 
@@ -29,7 +30,7 @@ void inf_start(void)
 
 int32_t inf_create(inf &pmsg, uint32_t size, uint32_t id)
 {
-  pmsg.buf = std::malloc(size);
+  pmsg.buf = new(std::nothrow) uint8_t[size];
   pmsg.identifier = id;
   return 0;
 }
@@ -37,8 +38,10 @@ int32_t inf_create(inf &pmsg, uint32_t size, uint32_t id)
 void inf_destroy(inf &pmsg)
 {
   if(pmsg.buf != NULL)
-    free(pmsg.buf);
-  pmsg.buf = NULL;
+  {
+    delete [] static_cast<uint8_t *>(pmsg.buf);
+    pmsg.buf = nullptr;
+  }
   pmsg.identifier = -1;
 }
 
